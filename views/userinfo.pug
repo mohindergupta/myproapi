@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  h1= title
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        form(method='POST' action='viewbank')
+          div.form-group
+            label(for='loginid') Login ID: 
+            input.form-control(type='text' id='loginid' value=bag.Loginid name='loginid')
+          div.form-group
+            label(for='first_name') First Name: 
+            input.form-control(type='text' id='first_name' value=bag.Firstname name='first_name')
+          div.form-group
+            label(for='last_name') Last Name: 
+            input.form-control(type='text' id='last_name' value=bag.Lastname name='last_name')
+          div.form-group
+            label(for='address1') Address 1: 
+            input.form-control(type='text' id='address1' value=bag.Address1 name='address1')
+          div.form-group
+            label(for='address2') Address 2:
+            input.form-control(type='text' id='address2' value=bag.Address2 name='address2')
+          div.form-group
+            label(for='city') City: 
+            input.form-control(type='text' id='city' value=bag.City name='city')
+          div.form-group
+            label(for='state') State: 
+            input.form-control(type='text' id='state' value=bag.State name='state')
+          div.form-group
+            label(for='zipcode') Zip Code: 
+            input.form-control(type='text' id='zipcode' value=bag.Zipcode name='zipcode')
+          div.form-group
+            label(for='country') Country: 
+            input.form-control(type='text' id='country' value=bag.Country name='country')
+          div.form-group
+            label(for='user_type') Use Type: 
+            input.form-control(type='text' id='user_type' value=bag.Usertype name='user_type')
+          div.form-group
+            label(for='email') eMail Address : 
+            input.form-control(type='text' id='email' value=bag.Email name='email')
+          div.form-group
+            label(for='phone') Phone# : 
+            input.form-control(type='text' id='phone' value=bag.Phone name='phone')
+          button.btn.btn-primary(type='submit') View Bank 
+        form(method='POST' action='/addbank')
+          button.btn.btn-primary(type='submit') Add Bank

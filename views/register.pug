@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  h1= title
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        form(method='POST' action='')
+          div.form-group
+            label(for='loginid') Login ID: 
+            input.form-control(type='text' id='loginid' placeholder='loginid' name='loginid')
+          div.form-group
+            label(for='password') Password: 
+            input.form-control(type='password' id='password' placeholder='password' name='password')
+          div.form-group
+            label(for='first_name') First Name: 
+            input.form-control(type='text' id='first_name' placeholder='first_name' name='first_name')
+          div.form-group
+            label(for='last_name') Last Name: 
+            input.form-control(type='text' id='last_name' placeholder='last_name' name='last_name')
+          div.form-group
+            label(for='address1') Address 1: 
+            input.form-control(type='text' id='address1' placeholder='address1' name='address1')
+          div.form-group
+            label(for='address2') Address 2:
+            input.form-control(type='text' id='address2' placeholder='address2' name='address2')
+          div.form-group
+            label(for='city') City: 
+            input.form-control(type='text' id='city' placeholder='city' name='city')
+          div.form-group
+            label(for='state') State: 
+            input.form-control(type='text' id='state' placeholder='state' name='state')
+          div.form-group
+            label(for='zipcode') Zip Code: 
+            input.form-control(type='text' id='zipcode' placeholder='zipcode' name='zipcode')
+          div.form-group
+            label(for='country') Country: 
+            input.form-control(type='text' id='country' placeholder='country' name='country')
+          div.form-group
+            label(for='user_type') Use Type: 
+            input.form-control(type='text' id='user_type' placeholder='user_type' name='user_type')
+          div.form-group
+            label(for='email') eMail Address : 
+            input.form-control(type='text' id='email' placeholder='email' name='email')
+          div.form-group
+            label(for='phone') Phone# : 
+            input.form-control(type='text' id='phone' placeholder='phone' name='phone')
+          button.btn.btn-primary(type='submit') Submit 
+        form(method='POST' action='/clear')
+          button.btn.btn-primary(type='submit') Clear All      
+      

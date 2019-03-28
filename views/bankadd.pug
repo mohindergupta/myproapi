@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        form(method='POST' action='')
+          div.form-group
+            label(for='loginid') Login ID: 
+            input.form-control(type='text' id='loginid' placeholer='Login ID' name='loginid')
+          div.form-group
+            label(for='Profilename') Profile Name: 
+            input.form-control(type='text' id='Profilename' placeholer='Your Bank Profile Name' name='Profilename')
+          div.form-group
+            label(for='Accountype') Accoun Type: 
+            input.form-control(type='text' id='Accountype' placeholer='Accoun Type' name='Accountype')
+          div.form-group
+            label(for='Bankname') Bank Name: 
+            input.form-control(type='text' id='Bankname' placeholer='Bank Name' name='Bankname')
+          div.form-group
+            label(for='Routing') Routing:
+            input.form-control(type='text' id='Routing' placeholer='Routing Number' name='Routing')
+          div.form-group
+            label(for='Account') Account: 
+            input.form-control(type='text' id='Account' placeholer='Account Number' name='Account')
+          div.form-group
+            label(for='Validated') Validated: 
+            input.form-control(type='text' id='Validated' placeholer='Validated' name='Validated')
+          div.form-group
+            label(for='Sharedlogin') Shared with Login: 
+            input.form-control(type='text' id='Sharedlogin' placeholer='Shared with Login' name='Sharedlogin')
+          button.btn.btn-primary(type='submit') Submit 
